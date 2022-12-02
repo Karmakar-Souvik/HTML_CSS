@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+	<html>
+		<head>
+			<meta name="viewport" content="width=device-width, initial-scale=1">
+			<style>
+				div.left
+				{
+				left:0px;
+				top:50px;
+				width:30%;
+				height:650px;
+				border:3px solid grey;
+				border-style:double;
+				z-index:1;
+				position:absolute;
+
+				overflow-y:scroll;
+				overflow-x:scroll;
+
+				background:bisque;
+				color:green;
+				letter-spacing: .11 px;
+	  			font-size: 20px;
+	  			text-align:left;
+	  			line-height:.51;
+	  			text-decoration: underline;
+	  			
+				}
+				div.right
+				{
+				left:30.3%;
+				top:50px;
+				width:69%;
+				height:650px;
+				border:3px solid grey;
+				border-style:double;
+				z-index:2;
+				position:absolute;
+				padding-bottom:20px;
+
+				overflow-y:scroll;
+				overflow-x:scroll;
+
+				background-color:lavenderBlush ;
+	  			color:rebeccaPurple ;
+	  			font-family:garamond;
+	  			
+	  			}
+
+	  			textarea{
+	  				width:380px;
+	  				height:628px;
+	  			}
+
+	  			button
+	  			{
+	  				width:300px;
+	  				height:50px;
+	  				background:red;
+	  				color:white;
+	  				font-size:30px;
+	  			}
+
+			</style>
+
+
+			<script>
+			</script>
+		</head>
+
+		<body>
+			<button onclick="document.getElementById('output').innerHTML=document.getElementById('input').value">Run</button>
+			<div class ="left">
+				<textarea id="input" rows="40" cols="50"></textarea>
+
+			</div>
+
+			<div id="output" class="right">
+				
+			</div>
+
+		</body>
+	</html>
