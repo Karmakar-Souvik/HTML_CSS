@@ -1,0 +1,82 @@
+<html>
+    <!DOCTYPE html>
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="author" content="Souvik Karmakar">
+        <title>Treasurer's cashbook - by Souvik Karmakar</title>
+
+        <style>
+            div.lp{
+                top: 1cm;
+                width: 5cm;
+                height: 10cm;
+                left:0cm;
+                background: bisque ;
+                color: green;
+                position: absolute;
+                text-decoration:underline;
+                cursor: pointer;
+                line-height: 40px;
+                border-left: 1cm;
+            }
+            div.cp{
+                width: 21cm;
+                height: 29.7cm;
+                background: beige ;
+                color: blue;
+                overflow-y: scroll;
+                position: absolute;
+                left: 5cm;
+                top: 1cm;
+
+
+            }
+
+        </style>
+    </head>
+    <body>
+        <div class="lp">
+        <ol>    
+            <li onclick="document.getElementById('cpg').innerHTML=document.getElementById('atr_1').innerHTML">Atr-I+II</li>
+            <li onclick="document.getElementById('cpg').innerHTML=document.getElementById('atr_3').innerHTML">Atr-III+IV</li>
+            <li onclick="document.getElementById('cpg').innerHTML=document.getElementById('tr_m').innerHTML">Treasurer Morning</li>
+            <li onclick="document.getElementById('cpg').innerHTML=document.getElementById('tr_e').innerHTML">Treasurer Evening</li>
+        </ol>    
+
+        </div> 
+
+        <div id = "cpg" class = "cp"></div>
+
+        <div class="rp"></div>
+
+        <div hidden>
+
+            <div id="atr_1" class ="cp">
+                
+                details of Atr 1 + 2
+                
+            </div>
+
+            <div id="atr_3" class ="cp">
+                
+                details of Atr 3 + 4
+                
+            </div>
+
+            <div id="tr_m" class ="cp">
+                
+                details of Treasurer morning
+                
+            </div>
+
+            <div id="tr_e" class ="cp">
+                
+                details of Treasurer evening
+                
+            </div>
+        </div>
+
+
+    </body>
+    
+</html>
